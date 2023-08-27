@@ -2,60 +2,290 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/43124b690f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Linknde</title>
+    <title>Linkedin Static Web-Page</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
-<body> 
-   <nav>
-    <div class="logo">
-        <img src="/Assets/linkedin-logo-png-1853.png" alt="Logo" width="45px" height="40px">
-        <div class="search">
-            <img src="/Assets/pngwing.png" alt="search" width="20px" >
-            <input type="search">
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="/index.html" class="logo"><img src="/Assets/logo.png" alt="Logo.png"></a>
+            <div class="search-box">
+                <img src="/Assets/search.png">
+                <input type="text" placeholder="search">            
+            </div>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="/Assets/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="/Assets/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="/Assets/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="/Assets/message.png"><span class="badge">3</span><span>Messaging</span></a></li>
+                <li><a href="#"><img src="/Assets/notification.png"><span class="badge">3</span><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="online"><img src="/Assets/user-1.png" alt="/user1" class="nav-profile-img"></div>
+            <h1 class="premium">Try Premium Free for 1 month</h1>
+        </div>
+    </nav>
+    
+<!-- Container -->
+
+    <div class="container">
+        <div class="left-sidebar">
+            <!-- Sidebar Profile Box -->
+            <div class="sidebar-profile-box">
+                <img src="/Assets/cover-pic.png" alt="cover-pic" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="/Assets/user-1.png" alt="user">
+                    <h1>Yash Sharma</h1>
+                    <h3>Technical Trainer at Skill academy</h3>
+                    <ul>
+                        <li>Connections <span>30</span></li>
+                        <li> Who viewed your profile<span>30</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="/Assets/items.png" alt="item">My Item</a>
+                </div>
+            </div>
+    
+            <!-- Sidebar Activity -->
+
+            <div class="sidebar-activity">
+                <h3>Recent</h3>
+                <a href="#"><img src="/Assets/recent.png">Tensorflow </a>
+                <a href="#"><img src="/Assets/recent.png">Tensorflow </a>
+                <a href="#"><img src="/Assets/recent.png">Tensorflow </a>
+                <a href="#"><img src="/Assets/recent.png">Tensorflow </a>
+                <a href="#"><img src="/Assets/recent.png">Tensorflow </a>
+    
+                <h3>Groups</h3>
+                <a href="#"><img src="/Assets/group.png">Tenserflow </a>
+                <a href="#"><img src="/Assets/group.png">Tenserflow </a>
+    
+                <h3>Followed Hashtags</h3>
+                <a href="#"><img src="/Assets/hashtag.png">Tensorflow  </a>
+                <a href="#"><img src="/Assets/hashtag.png">Tensorflow  </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+    
+        <div class="main-container">
+            <!-- Create Post Section -->
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="/Assets/user-1.png">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="/Assets/image.png">Photo</li>
+                    <li><img src="/Assets/video.png">Video</li>
+                    <li><img src="/Assets/event.png">Event</li>
+                    <li><img src="/Assets/Article.png">Write Article</li>
+                </div>
+            </div>
+        
+            <!-- Post 1 -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="/Assets/user-1.png">
+                    <div>
+                        <h1>Myntra Fashion</h1>
+                        <small>792,426 Followers</small>
+                        <br>
+                        <small>Promoted</small>
+                    </div>
+                </div>
+                <img src="/Assets/Demo post image.jpg" class="post-1" alt="Post image">
+
+                <!-- Post Statistics -->
+                <div class="post-stats">
+                    <div>
+                        <img src="/Assets/thumbsup.png">
+                        <img src="/Assets/love.png">
+                        <img src="/Assets/clap.png">
+                        <div>
+                            <span class="users-stat">20 &middot; Comments</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post Activities -->
+                
+                <div class="post-ativity">
+                    <!-- Like Button -->
+                    <div>
+                        <img src="/Assets/like.png">
+                        <span>Like</span>
+                    </div>
+                    <!-- Comment Button -->
+                    <div>
+                        <img src="/Assets/Comments.png">
+                        <span>Comment</span>
+                    </div>
+                    <!-- Share Button -->
+                    <div>
+                        <img src="/Assets/share.png">
+                        <span>Share</span>
+                    </div>
+                    <!-- Send Button -->
+                    <div>
+                        <img src="/Assets/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+
+            <div class="post-2">
+                <!-- Post Author Information -->
+                <div class="post-author">
+                    <img src="/Assets/Profile logo of yash.jpg">
+                    <div>
+                        <h1>Yash Sharma</h1>
+                        <small>10 Million - Followers</small>
+                        <br>
+                        <small>Youtube Channel</small>
+                        <p>Published new video on CSS Property Box model. This video will run through few more properties<br> that make up the box-model, Margin, Border, Padding, Content-Height & Width.</p>
+                    </div>
+                </div>
+            
+                <!-- Video Content -->
+                <video width="430" height="430" controls src="/Assets/Demo post video.mp4" class="post-2"></video>
+            
+                <!-- Post Statistics -->
+                <div class="post-stats">
+                    <div>
+                        <img src="/Assets/thumbsup.png">
+                        <img src="/Assets/love.png">
+                        <img src="/Assets/clap.png">
+                        <div>
+                            <span class="users-stat">20 &middot; Comments</span>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Post activities -->
+                
+                <div class="post-ativity">
+                    <!-- Like Button -->
+                    <div>
+                        <img src="/Assets/like.png">
+                        <span>Like</span>
+                    </div>
+                    <!-- Comment Button -->
+                    <div>
+                        <img src="/Assets/Comments.png">
+                        <span>Comment</span>
+                    </div>
+                    <!-- Share Button -->
+                    <div>
+                        <img src="/Assets/share.png">
+                        <span>Share</span>
+                    </div>
+                    <!-- Send Button -->
+                    <div>
+                        <img src="/Assets/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+                </div>
+           </div>
+
+           <!-- Right Sidebar -->
+
+       <div class="right-sidebar">
+    <div class="sidebar-news">
+        <ul>
+            <!-- News Section Title and Icon -->
+            <img src="/Assets/info.png" class="info-icon">
+            <h1>LinkedIn News</h1>
+            
+            <!-- News Items -->
+            <li>
+                <a href="#">Indian crosses 3,58,974 daily cases</a>
+                <span>10h ago - 5,043 readers</span>
+            </li>
+
+            <li>
+                <a href="#">Zomato files for $1.18 IPO</a>
+                <span>13h ago - 52,043 readers</span>
+            </li>
+            
+            <li>
+                <a href="#">Jobs pay, in IT soar</a>
+                <span>1d ago - 7,865 readers</span>
+            </li>
+
+            <li>
+                <a href="#">Google saving $1B a year from WFH</a>
+                <span>2d ago - 7,865 readers</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Todays Most viewed Courses -->
+
+    <div class="courses">
+        <!-- Courses Section Title and Icon -->
+        <img src="/Assets/info.png" class="info-icon">
+        <ul>
+            <h1>Today's most viewed courses</h1>
+            
+            <!-- Course Items -->
+            <li>
+                <a href="#">Indian crosses 3,58,974 daily cases</a>
+                <span>Top news 9874 - reviews</span>
+            </li>
+            
+            <li>
+                <a href="#">Zomato files for $1.18 IPO</a>
+                <span>Top news 9874 - reviews</span>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="ad">
+        <!-- Ad Section Title and Icon -->
+        <img src="/Assets/info.png" class="info-icon">
+        <h1>Add to your feed</h1>
+        
+        <!-- Ad Contents -->
+        <div class="ad-content">
+            <div class="ad-logo-container">
+                <img class="ad-logo" src="/Assets/unilever logo.png">
+                <span class="ad-text">Unilever</span>
+            </div>
+            <h2>Company - Consumer Goods</h2>
+            <button class="follow-button">+ Follow</button>
+        </div>
+        
+        <div class="ad-content">
+            <div class="ad-logo-container">
+                <img class="ad-logo" src="/Assets/LinkedIn logo.png">
+                <span class="ad-text">LinkedIn</span>
+            </div>
+            <h2>Company - Internet</h2>
+            <button class="follow-button">+ Follow</button>
+        </div>
+        
+        <div class="ad-content">
+            <div class="ad-logo-container">
+                <img class="ad-logo" src="/Assets/myntra logo.jpg">
+                <span class="ad-text">Myntra</span>
+            </div>
+            <h2>Company - Internet</h2>
+            <button class="follow-button">+ Follow</button>
         </div>
     </div>
-    <ul>
-        <li>
-            <i class="fa-solid fa-house"></i>
-            <a href="#"> Home </a>
-        </li>
-        <li>
-            <i class="fa-solid fa-users"></i>
-            <a href="#">My Network</a> 
-        </li>
-        <li>
-            <i class="fa-solid fa-suitcase"></i>
-            <a href="#">Job</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-comment-dots"></i>
-            <a href="#">Messaging</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-bell"></i>
-            <a href="#">Notification</a>
-        </li>
-    </ul>
-    <div class="premium">
-        <div class="user">
-            <div><img src="/Assets/Profile image.png" alt="" width="34px"></div>
-            <img src="/Assets/down-arrow.png" alt="">
-        </div>
-        <span><a href="#">Try Premium Free for 1 month</a></span>
+    </div>    
     </div>
-   </nav>
-   <div class="main_section">
-    <div class="account">
-
     </div>
-    <div class="content">
-
-    </div>
-    <div class="R_panel">
-
-    </div>
-   </div>
 </body>
 </html>
